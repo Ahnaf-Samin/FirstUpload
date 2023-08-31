@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h3{
+            text-align: center;
+        }
+        .forThisOnly{
+            text-align: center;
+            color: blue;
+        }
+        #forThisOnly{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(14, 139, 170);">Finally JavaScript</h1>
+    <h3>HTML and CSS are not programming languages. They cannot provide funtionalities to a page</h3>
+    <h3>We need JavaScript for this. </h3>
+    <p id="htmlPtag">Blender is off. Click the button to turn on.</p>
+    <button type="button" onclick="test()" id="but">On</button>
+    
+    <script>
+        function test(){
+            document.getElementById("htmlPtag").innerHTML="Blender is on"
+            document.getElementById("but").innerHTML="Off"
+        }
+    </script>
+    <hr>
+    <h1 style="text-align: center; color: rgb(14, 139, 170);">HTML Forms</h1>
+    <form action="useraccount.php" method="get">
+        Username: 
+        <input type="text"> <br>
+        <label for="name">Username: </label>
+        <input type="text" name="" id="name">
+        <span>This one has <b>label tag</b> and <b>input tag </b> has <b>id attribute</b></span><br>
+        <label for="password">Password: </label>
+        <input type="password" name="useraccount.php" id="password"><br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" value="Male" id="">Male
+        <input type="radio" name="gender" value="Female" id="">Female <br>
+        <input type="radio" name="gendeer" value="Male" id="">Male
+        <input type="radio" name="geender" value="Female" id="">Female
+        <span>We can select both buttons here because both buttons don't have the same name.</span>
+        <br>
+        <button type="button">Submit</button>
+        <input type="submit" value="submit">
+        <span>First <b>submit</b> button is created with <b>button</b> tag. Second <b>submit</b> button is created with <b>input</b> tag</span>
+    </form>
+    <hr>
+    <form action="useraccount.php" method="get">
+        <h1 style="text-align: center;">Select Tag</h1>
+        Select tag helps to show options on the screen
+        <select name="Gender" id="">Male
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <span>Don't Know yet what the value part of option tag does</span>
+        <p>What if We don't want to use the text area given by default?What is we want to take a input which is very long?</p>
+        <span>The above text is like this because the paragraphas are right aligned!</span>
+        <p><q>Textarea Tag</q>is used for this purpose</p>
+        <textarea name="" id="" cols="30" rows="10" style="background-color: bisque;" placeholder="This is placeholder tag, goes away when you write something in the text area!"></textarea>
+        
+        
+        <h1 style="text-align: center;">Data List</h1>
+        <pre>Similar to options, some suggestions</pre>
+        <input type="text" list="myList">
+        <datalist id="myList">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </datalist>
+    </form>
+    <hr>
+    <h1 style="text-align: center;">HTML form input</h1>
+    <h3>Welcome to my website</h3>
+    <form action="useraccount.php" method="get" class="forThisOnly">
+        <label for="">Your Username</label>
+        <input type="text" id="forThisOnly" required placeholder="Rakib"> <br>
+        <label for="">Your Password</label>
+        <input type="password" name="" id="forThisOnly" autofocus placeholder="Password"> <br>
+        <span>The cursor is already at this input when the page is loaded. It's because of the autofocus tag</span><br>
+        <label for="">Your Pin</label>
+        <input type="password" id="forThisOnly" maxlength="5" placeholder="1234">
+        <span>Cannot enter more than 5 characters because of the maxlength tag</span> <br>
+        <input type="submit" value="Submit">
+        <p>If you press submit without giving input to the username field, it will ask you to fill up that field first. This happens because of the <q>required</q> tag. The input fields are larger than the fields above because they have padding of 10 pixels in the internal css. </p>
+    </form>
+    <ul class="fifthPage">
+        <li><a href="index.html" class="fifthPage">Home</a></li>
+        <li><a href="second page.html" class="fifthPage">Second page</a></li>
+        <li><a href="third page.html" class="fifthPage">Third page</a></li>
+        <li><a href="fourth page.html" class="fifthPage">fourth page</a></li>
+        <li><a href="TEST.HTML" class="fifthPage">Test</a></li>
+    </ul>
+</body>
+</html>

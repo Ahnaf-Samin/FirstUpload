@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test for javaScript and forms tag</title>
+    <style>
+        #test{
+            font-size: 30px;
+            /* font-size: 0.86vw; */
+        }
+        h1, h2{
+            text-align: center;
+        }
+        p, form{
+            /* font-size: 0.86vw; */
+            font-size: 1vw;
+        }
+        .test{
+            color:cadetblue ;
+            font-size: 110%; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Testing knowledge of javaScript and form tags</h1>
+    <h2>JavaScript</h2>
+    <p id="test">This paragraph is from html. </p>
+    <script>
+        function test(){
+            document.getElementById("test").innerHTML="The paragraph has been changed by javaScript"
+            document.getElementById("button").innerHTML="Text has been changed"
+        }        
+    </script>
+    <button type="button" onclick="test()" id="button">Click here to change text</button>
+    <hr>
+    <h2>Forms</h2>
+    <p><u><b>Form without label tag</b></u></p>
+    <form action="user.php" method="get">
+        Username: <input type="text"><br>
+        Password: <input type="password" 
+        name="password" id=""><br>
+        Gender: <input type="radio" name="gender" id="">Male
+        <input type="radio" name="gender" id="">Female <br>
+        <input type="submit" value="Submit">
+    </form><br>
+    <p><u><b>Form with label tag</b></u></p>
+    <form action="user.php" method="get">
+        <label for="Username">Username:</label>
+        <input type="text"> <br>
+        <label for="Password">Password</label>
+        <input type="password" name="Password" id=""> <br>
+        Gender <input type="radio" name="geender" id=""><i>Male</i>
+        <input type="radio" name="gendeer" id=""><i>Female</i> <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p><b>The form that has label tag also has the following features. <br> The submit option has been created with button tag instead of input tag.<br>In the Gender option, both the options can be selected at the same time, unlike the one above.</b></p>
+    <p class="test">If you change the width of the page, you shall notice that <u>p tag</u> elements change their shape with the page.But the <q>This paragraph is from html</q> paragraph does not change it's size with variation of the width. This is because this paragraph has fixed font-size of 30 pixels. The h1 and h2 tags have fixed size also apparantly. All the texts inside the form tag also change variation to the width. </p>
+    <p style="text-align: center;"><a href="index.html"><img src="home25694.png" alt="Image not found" height="100px" width="100px"></a></p>
+</body>
+</html>

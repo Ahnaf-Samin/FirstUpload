@@ -1,0 +1,39 @@
+p{
+    text-align: right;
+    font-size: 2vw;  /*Responsive*/
+}
+
+
+body{
+    background-color: blanchedalmond;
+}
+
+table, th, td{
+    border: 1px solid rgb(53, 238, 130);
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+#secondptag{
+    text-align: left;
+}
+
+#justThisOne{
+    font-size: 20px;
+}
+
+.testClass{
+    text-align: center;
+}
+
+.fifthPage{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    text-align: right;
+}
+
+#htmlPtag{
+    color: blueviolet;
+    font-size: 30px;
+}

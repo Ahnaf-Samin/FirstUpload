@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original</title>
+    <!--Internal CSS written in head section-->
+    <!-- <style>
+        p{
+            text-align: right;
+        }
+    </style> -->
+    
+    <link rel="stylesheet" href="style.css"> <!--Link tag used to link with external css file-->
+</head>
+<body style="background-color: blanchedalmond;">
+    <p style="font-size: 200%; color:rgb(43, 40, 40)" > 
+        <b>Bold</b> 
+        <i>Italic</i> 
+        <u>Underline</u>
+        <del>Deleted</del>
+        <em>Emphasis Tag</em> <!--Alternative for Italic-->
+        <strong>Strong Tag</strong> <!--Alternative for Bold-->
+        <q style="color: darkblue">Quotation Tag</q>
+        <blockquote cite="bangladesh.gov.bd">This is SPARTA. <abbr title="Just Kidding">JK.</abbr> Writen in blockquote tag</blockquote> <!--Used when some text is used from another website of source -->
+        <address style="font-size: larger">
+            This is written in address tag<br>
+            Used for writing addresses in HTML
+        </address>
+    </p>
+    <pre>
+        Only Know you love when you
+                    let her go
+        <!--Used to keep formating. Useful for song lyrics-->
+    </pre>
+
+    <p style="text-align: left;"><b>Difference betweeen <q>quotation tag</q> and normal quation " "</b></p>
+
+    <p style="background-color: black; color: white;"><!--Lorem Bulit-in Paragraph -->Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Commodi aliquid quod voluptates minus harum, suscipit quis <!-- <hr> Horizental Rule Tag--> accusamus quos omnis eligendi excepturi culpa quo nulla labore voluptatum voluptate, ab adipisci.<br> (Break tag has been used before this word) Delectus.</p>
+                           <!-- Block Tags and Inline Tags -->
+    <span style="background-color: black; color: white; text-align:center;"><b>Difference between block element and inline element. Text-align is not working with span tag</b></span>
+    <div style="background-color: black;">
+        <p style="color: aliceblue;">This is div tag. It is also a block element. </p>
+        <span style="background-color: aliceblue;">This is span tag inside div tag</span>
+        <p style="background-color: aliceblue;">This a <q>p</q> tag inside div tag</p>
+    </div>
+    
+    <h1 style="text-align: center; color: orange;">Center Aligned Text</h1>
+
+    <p><PRE>(a+b)^2 = a^2+2ab+b^2</PRE></p>
+    <p>Text align on internal css does not work with <pre>pre tag</pre> even if something is written after using the pre tag</p>
+    <p><pre>This line is written inside pre tag</pre></p>
+    <p>This line follows internal css cause it does not have a pre tag</p>
+    <!--These style="" are called in-line css-->
+    <p style="text-align: center">(a+b)<sup>2</sup> = a<sup>2</sup>+2ab+b<sup>2</sup></p>
+    
+    <a href="second page.html">Next Page</a><br>
+    <!-- Anchor Tag -->
+    <a href="%userprofile%/Desktop/index.html" target="_blank">Third file is not working for some reason</a> <br>
+    <a href="third page.html">Third Page</a>
+    <a href="fourth page.html">Fourth Page</a>
+    <a href="TEST.HTML">Test</a>
+    <a href="fifth page.html">Last Page</a>
+</body>
+</html>
